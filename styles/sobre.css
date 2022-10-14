@@ -1,0 +1,246 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Beau+Rivage&family=Comic+Neue&family=Dancing+Script&family=Pacifico&family=Quicksand:wght@300&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --azul:#3772FF;
+    --verde:#36D6AD;
+    --coral: #FC7071;
+    --creme: #FCF0E3;
+    --cinza-escuro: #333333;
+    --fundo-degrade: linear-gradient(97.54deg, #333333 35.49%, #FCF0E3 235.37%);
+}
+
+/* General */
+.highlight {
+    color: var(--verde);
+}
+
+/*Containers */
+#container {
+    display: flex;
+    flex-direction: row;
+    color: var(--creme);
+}
+
+#bio-container {
+    flex: 1 1 30%;
+    min-height: 100vh;
+    background: var(--cinza-escuro);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px 12px;
+    border-right: 5px solid var(--coral);
+}
+
+#bio-container a {
+    font-size: 1rem;
+}
+
+#about-container {
+    flex: 1 1 70%;
+    height: 100vh;
+    background: var(--fundo-degrade);
+    padding: 50px;
+    font-size: 1.3rem;
+}
+
+/* bio container */
+
+#bio-container h2 {
+    margin-bottom: 25px;
+}
+
+#bio-container p {
+    margin-bottom: 20px;
+}
+
+#bio-container #welcome-text {
+    font-weight: bold;
+}
+
+#bio-container img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid var(--creme);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+#social-container li {
+    flex: 1 1 0;
+    max-width: 60px;
+}
+
+#social-container li a {
+    color: var(--verde);
+    font-size: 30px;
+}
+
+#email-container {
+    display: flex;
+    justify-content: center;
+}
+
+#email-container ion-icon, 
+#email-container  a {
+    flex: 1 1 0;
+}
+
+#email-container a {
+    color: var(--verde);
+    text-decoration: none;
+    max-width: 225px;
+}
+
+#email-container ion-icon {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20px;
+}
+
+/* about container */
+
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.description {
+    max-width: 75%;
+    margin-bottom: 10px;    
+}
+
+#btn-projects {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--creme);
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 25px 0;
+    padding: 12px 10px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+}
+
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0;    
+}
+
+#btn-projects ion-icon {
+    font-size: 20px;
+    max-width: 20px;
+}
+
+#btn-projects:hover {
+    background-color: transparent;
+}
+
+#skills-section-title {
+    border-top: 1px solid var(--creme);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skills-box {
+    flex: 1 1 33%;
+    max-width: 33%;
+    margin-bottom: 35px;
+}
+
+.skills-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--verde);
+}
+
+.skills-box i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+/* mobile */
+@media(max-width: 450px) {
+    
+    #container {
+        flex-direction: column;
+    }
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+       
+    }
+
+    #bio-container h2 {
+        display: none;        
+    }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container {
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-container .description {
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+    }
+
+    #btn-projects {
+        margin: 20px auto;
+    }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .skills-box i {
+        font-size: 60px;
+    }
+
+}

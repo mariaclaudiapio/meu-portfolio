@@ -6,9 +6,10 @@
     --coral: #FC7071;
     --creme: #FCF0E3;
     --cinza-escuro: #333333;
-    --cinza-medio: #BCBCBC;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #EB9B00 165.37%);
+    /* --cinza-medio: #BCBCBC;
     --cinza-claro: #F6F6F6;
-    --branco: #FFFFFF;
+    --branco: #FFFFFF; */
 }
 
 body {
