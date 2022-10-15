@@ -6,7 +6,6 @@
     --coral: #FC7071;
     --creme: #FCF0E3;
     --cinza-escuro: #333333;
-    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #EB9B00 165.37%);
     /* --cinza-medio: #BCBCBC;
     --cinza-claro: #F6F6F6;
     --branco: #FFFFFF; */
@@ -22,7 +21,7 @@ body {
 .header-wrapper {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(-45deg, var(--azul), var(--verde), var(--coral), var(--creme));
+    background: linear-gradient(-45deg, var(--coral), var(--cinza-escuro), var(--verde));
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;

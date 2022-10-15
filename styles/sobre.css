@@ -30,7 +30,7 @@
 }
 
 #bio-container {
-    flex: 1 1 30%;
+    flex: 1 1 20%;
     min-height: 100vh;
     background: var(--cinza-escuro);
     text-align: center;
@@ -44,7 +44,7 @@
 }
 
 #about-container {
-    flex: 1 1 70%;
+    flex: 1 1 80%;
     height: 100vh;
     background: var(--fundo-degrade);
     padding: 50px;
@@ -132,10 +132,19 @@
     margin-bottom: 10px;    
 }
 
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+#btn-top {
+    display: none;
+}
+
 #btn-projects {
     font-weight: bold;
-    font-size: 16px;
-    color: var(--creme);
+    font-size: 18px;
+    color: var(--cinza-escuro);
     background-color: var(--verde);
     border: 2px solid var(--verde);
     border-radius: 5px;
@@ -146,6 +155,7 @@
     width: 150px;
     text-align: center;
     display: flex;
+    margin-right: 1rem;
 }
 
 #btn-projects ion-icon,
@@ -160,6 +170,7 @@
 
 #btn-projects:hover {
     background-color: transparent;
+    color: var(--creme);
 }
 
 #skills-section-title {
@@ -171,6 +182,7 @@
 
 #skills-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 25px;
 }
@@ -228,7 +240,50 @@
         line-height: 26px;
     }
 
-    #btn-projects {
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btn-top {
+        display: block;
+    }
+
+    #btn-top {
+        font-weight: bold;
+        font-size: 18px;
+        color: var(--cinza-escuro);
+        background-color: var(--verde);
+        border: 2px solid var(--verde);
+        border-radius: 5px;
+        text-decoration: none;
+        transition: .5s;
+        margin: 25px 0;
+        padding: 12px 10px;
+        width: 150px;
+        text-align: center;
+        display: flex;
+        margin-right: 1rem;
+    }
+    
+    #btn-top ion-icon,
+    #btn-top span {
+        flex: 1 1 0;    
+    }
+    
+    #btn-top ion-icon {
+        font-size: 20px;
+        max-width: 20px;
+    }
+    
+    #btn-top:hover {
+        background-color: transparent;
+        color: var(--creme);
+    }
+    
+
+    #btn-projects,
+    #btn-top {
         margin: 20px auto;
     }
 
