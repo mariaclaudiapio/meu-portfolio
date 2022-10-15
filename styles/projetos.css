@@ -1,0 +1,121 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+:root {
+  --verde:#36D6AD;
+  --coral: #FC7071;
+  --creme: #FCF0E3;
+  --cinza-escuro: #333333;
+  --fundo-degrade: linear-gradient(97.54deg, #333333 35.49%, #FCF0E3 235.37%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--creme);
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--verde);
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .main {
+    display: block;
+    background: var(--cinza-escuro);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  section.module p {
+    margin-bottom: 40px;
+  }
+  
+  section.module:last-child {
+    margin-bottom: 0;
+  }
+  
+  section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  section.module.content {
+    padding: 40px 0;
+    background: var(--fundo-degrade);
+  }
+  
+  section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* essa é a propriedade responsável pelo efeito parallax*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-babackground-size: cover;
+  }
+  
+  section.module.parallax-1 {
+    background-image: url("../img/crepusculo.jpg");
+  }
+  
+  section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 40%,
+      #000 80%
+    );  
+  }
+  
+  section.module.parallax-2 {
+    background-image: url("../img/sistema-estacionamento.gif");
+  }
+  
+  section.module.parallax-3 {
+    background-image: url("../img/verao.jpg");
+  }
+  
+  section.module.parallax h2 {
+    color: var(--creme);
+    text-align: center;
+    font-size: 6rem;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+  
