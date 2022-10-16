@@ -38,6 +38,7 @@ h2 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--verde);
+    text-align: center;
   }
 
   .header-wrapper {
@@ -240,7 +241,7 @@ h2 {
   }
   
   section.module.parallax-1 {
-    background-image: url("../img/crepusculo.jpg");
+    background-image: url("../img/barbearia_alura.png");
   }
   
   section.module.parallax:after {
