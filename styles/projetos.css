@@ -41,6 +41,11 @@ h2 {
     text-align: center;
   }
 
+.highlight {
+    color: var(--coral);
+    font-weight: bold;
+}
+
   .header-wrapper {
     height: 30vh;
     width: 100%;
@@ -265,6 +270,49 @@ h2 {
   section.module.parallax-3 {
     background-image: url("../img/verao.jpg");
   }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#btn-top {
+    display: none;
+}
+
+#btn-projects {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--cinza-escuro);
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 25px 0;
+    padding: 12px 10px;
+    width: 140px;
+    text-align: center;
+    display: flex;
+    margin-right: 1rem;
+}
+
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0;    
+}
+
+#btn-projects ion-icon {
+    font-size: 20px;
+    max-width: 20px;
+}
+
+#btn-projects:hover {
+    background-color: transparent;
+    color: var(--creme);
+}
+
   
   
   /* RESPONSIVO */
