@@ -6,6 +6,8 @@
     --coral: #FC7071;
     --creme: #FCF0E3;
     --cinza-escuro: #333333;
+    padding: 0;
+    margin: 0;
     /* --cinza-medio: #BCBCBC;
     --cinza-claro: #F6F6F6;
     --branco: #FFFFFF; */
@@ -52,12 +54,20 @@ h2 {
     color: var(--creme);
     font-size: 24px;
     padding: 1rem 4rem;
-    border: 1px solid var(--creme);
+    border-width: 1px;
+    border-color: var(--creme);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
     min-width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+.social-media :nth-child(2) {
+    border-right-style: solid;
 }
 
 a:hover {
@@ -201,9 +211,16 @@ a:hover {
 /* RESPONSIVO */
 
 @media (max-width:800px) {
-    .social-media{
+    .social-media {
         display: flex;
         flex-direction: column;
+        border-width: 1px;
+        border-color: var(--creme);
+    }
+    
+    .social-media :nth-child(1) {
+        border-right-style: solid;
+        border-bottom-style: none;
     }
 
     body, ul {
